@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Sarah Birthday</title>
+		<meta name="description" content="A layout with an alternate scroll on image columns and a content preview." />
+		<meta name="keywords" content="layout, scroll, locomotive scroll, column, javascript, web design" />
+		<link rel="stylesheet" href="https://use.typekit.net/njz5ajv.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<body class="loading">
+		<main>
+			<!-- <div class="frame">
+				<h1 class="frame__title">Alternate Column Scroll</h1>
+				<nav class="frame__links">
+					<a href="https://tympanus.net/codrops/2021/12/01/grid-zoom-layout/">Previous demo</a>
+					<a href="https://tympanus.net/codrops/?p=57959">Article</a>
+					<a href="https://github.com/codrops/ColumnScroll/">GitHub</a>
+				</nav>
+				<button class="unbutton button-menu" aria-label="Open the menu"><span></span></button>
+			</div> -->
+			<h2 class="heading heading--up">Sarah Sahda</h2>
+			<h2 class="heading heading--down">your present</h2>
+			<div class="columns" data-scroll-container>
+				<div class="column-wrap column-wrap--height">
+					<div class="column">
+						<figure class="column__item">
+							<div class="column__item-imgwrap" data-pos="2">
+								<div class="column__item-img" style="background-image:url(img/august.jpg)"></div>
+							</div>
+							<figcaption class="column__item-caption">
+								<span>21st Birthday & Dipa Inhouse</span>
+								<span>August</span>
+							</figcaption>
+						</figure>
+						<figure class="column__item">
+							<div class="column__item-imgwrap" data-pos="5">
+								<div class="column__item-img" style="background-image:url(img/sept.jpg)"></div>
+							</div>
+							<figcaption class="column__item-caption">
+								<span>Broke Up</span>
+								<span>September</span>
+							</figcaption>
+						</figure>
+						<figure class="column__item">
+							<div class="column__item-imgwrap" data-pos="8">
+								<div class="column__item-img" style="background-image:url(img/oct.jpg)"></div>
+							</div>
+							<figcaption class="column__item-caption">
+								<span>Hectic AF!</span>
+								<span>October</span>
+							</figcaption>
+						</figure>
+						<figure class="column__item">
+							<div class="column__item-imgwrap" data-pos="11">
+								<div class="column__item-img" style="background-image:url(img/nov.jpg)"></div>
+							</div>
+							<figcaption class="column__item-caption">
+								<span>Ur first Job🔥</span>
+								<span>November</span>
+							</figcaption>
+						</figure>
+						<figure class="column__item">
+							<div class="column__item-imgwrap" data-pos="14">
+								<div class="column__item-img" style="background-image:url(img/des.jpg)"></div>
+							</div>
+							<figcaption class="column__item-caption">
+								<span>Art,Food,and OJT</span>
+								<span>December</span>
+							</figcaption>
+						</figure>
+					</div><!-- /column -->
+				</div><!-- /column-wrap -->
+				<div class="column-wrap">
+					<div class="column" data-scroll-section>
+						<figure class="column__item">
+							<div class="column__item-imgwrap" data-pos="10">
+								<div class="column__item-img" style="background-image:url(img/thewishes.jpg)"></div>
+							</div>
+							<figcaption class="column__item-caption">
+								<span>The Wishes</span>
+								<span>Iqbal</span>
+							</figcaption>
+						</figure>
+						<figure class="column__item">
+							<div class="column__item-imgwrap" data-pos="13">
+								<div class="column__item-img" style="background-image:url('https://s.mxmcdn.net/images-storage/albums4/7/8/2/3/8/8/42883287_800_800.jpg')"></div>
+							</div>
+							<figcaption class="column__item-caption">
+								<span>The Song</span>
+								<span>Timur</span>
+							</figcaption>
+						</figure>
+						<figure class="column__item">
+							<div class="column__item-imgwrap" data-pos="16">
+								<div class="column__item-img" style="background-image:url('https://sarahscoop.com/wp-content/uploads/2021/11/444-angel-number-3.jpg')"></div>
+							</div>
+							<figcaption class="column__item-caption">
+								<span>The Angelic Number</span>
+								<span>4444</span>
+							</figcaption>
+						</figure>
+						<figure class="column__item">
+							<div class="column__item-imgwrap" data-pos="19">
+								<div class="column__item-img" style="background-image:url(img/jun.jpg)"></div>
+							</div>
+							<figcaption class="column__item-caption">
+								<span>Thesis drag you down</span>
+								<span>June</span>
+							</figcaption>
+						</figure>
+						<figure class="column__item">
+							<div class="column__item-imgwrap" data-pos="22">
+								<div class="column__item-img" style="background-image:url(img/jul.jpg)"></div>
+							</div>
+							<figcaption class="column__item-caption">
+								<span>Sarah Sahda Shabirah A.md 🎓</span>
+								<span>July</span>
+							</figcaption>
+						</figure>
+					</div><!-- /column -->
+				</div>
+				<div class="column-wrap column-wrap--height">
+					<div class="column">
+						<figure class="column__item">
+							<div class="column__item-imgwrap" data-pos="15">
+								<div class="column__item-img" style="background-image:url(img/jan.jpg)"></div>
+							</div>
+							<figcaption class="column__item-caption">
+								<span>New year, new hope</span>
+								<span>January</span>
+							</figcaption>
+						</figure>
+						<figure class="column__item">
+							<div class="column__item-imgwrap" data-pos="3">
+								<div class="column__item-img" style="background-image:url(img/feb.jpg)"></div>
+							</div>
+							<figcaption class="column__item-caption">
+								<span>Coffee shop everyday 😎</span>
+								<span>February</span>
+							</figcaption>
+						</figure>
+						<figure class="column__item">
+							<div class="column__item-imgwrap" data-pos="18">
+								<div class="column__item-img" style="background-image:url(img/mar.jpg)"></div>
+							</div>
+							<figcaption class="column__item-caption">
+								<span>Mama Come to Malang 👩‍👧‍👧</span>
+								<span>March</span>
+							</figcaption>
+						</figure>
+						<figure class="column__item">
+							<div class="column__item-imgwrap" data-pos="21">
+								<div class="column__item-img" style="background-image:url(img/apr.jpg)"></div>
+							</div>
+							<figcaption class="column__item-caption">
+								<span>Ramadhan is back🌙</span>
+								<span>April</span>
+							</figcaption>
+						</figure>
+						<figure class="column__item">
+							<div class="column__item-imgwrap" data-pos="24">
+								<div class="column__item-img" style="background-image:url(img/may.jpg)"></div>
+							</div>
+							<figcaption class="column__item-caption">
+								<span>Jatim Park & Kuliner Batu 🦕</span>
+								<span>May</span>
+							</figcaption>
+						</figure>
+					</div><!-- /column -->
+				</div><!-- /column-wrap -->
+			</div><!-- columns -->
+			<div class="content">
+				<div class="content__item">
+					<h2 class="content__item-title">Lucky Wood</h2>
+					<div class="content__item-text">
+						<span>Faith, you're driving me away
+						You do it every day
+						You don't mean it
+						But it hurts like hell</span>
+						<span>2019</span>
+					</div>
+				</div>
+				<div class="content__item">
+					<h2 class="content__item-title">21st Birthday & Dipa Inhouse</h2>
+					<div class="content__item-text">
+						<span>Di bulan ini juga kamu keterima magang di Dipa, kerenn bangettt! kayaknya kalo dipikir-pikir, awal mula karirmu tuh dari bulan agustus ini ya sarah : ).
+						</span>
+						<span>August</span>
+					</div>
+				</div>
+				<div class="content__item">
+					<h2 class="content__item-title">Coffee shop everyday 😎</h2>
+					<div class="content__item-text">
+						<span>Kalo dilihat dari galeri ku, bulan ini kita sering ngopi wkwk. Dari yang tiba-tiba ke Mixue, terus ke Roketto, terus ga ada apa apa ke OURA. ??//Dan makasih karena doa mu, aku bulan ini keterima di Hasmicro</span>
+						<span>February</span>
+					</div>
+				</div>
+				<div class="content__item">
+					<h2 class="content__item-title">Good Earth</h2>
+					<div class="content__item-text">
+						<span>We scratch our eternal itch
+						A twentieth century bitch
+						And we are grateful for
+						Our iron lung</span>
+						<span>2020</span>
+					</div>
+				</div>
+				<div class="content__item">
+					<h2 class="content__item-title">Broke up</h2>
+					<div class="content__item-text">
+						<span>Aku gatau kamu masih inget atau engga, cuman kita bulan ini kita udahan : (. Berat banget sarah bulan ini, gabisa ngomong banyak aku buat bulan ini hehe. Sakit soalnya:)</span>
+						<span>September</span>
+					</div>
+				</div>
+				<div class="content__item">
+					<h2 class="content__item-title">Loyal Royal</h2>
+					<div class="content__item-text">
+						<span>The head shrinkers
+						They want everything
+						My Uncle Bill
+						My Belisha beacon</span>
+						<span>2015</span>
+					</div>
+				</div>
+				<div class="content__item">
+					<h2 class="content__item-title">Empty Words</h2>
+					<div class="content__item-text">
+						<span>Suck, suck your teenage thumb
+						Toilet trained and dumb
+						When the power runs out
+						We'll just hum</span>
+						<span>2021</span>
+					</div>
+				</div>
+				<div class="content__item">
+					<h2 class="content__item-title">Hectic AF!</h2>
+					<div class="content__item-text">
+						<span>Bulan ini Sarah sibukk bangett, dari magangnya yang karena mau habis jadi harus nyiapin presentasi akhir, aisec harus bikin2 video jugaa, dan harus ada drama dari temen temen magangmu juga.</span>
+						<span>October</span>
+					</div>
+				</div>
+				<div class="content__item">
+					<h2 class="content__item-title">Lone Cone</h2>
+					<div class="content__item-text">
+						<span>And if you're frightened
+						You can be frightened
+						You can be, it's OK</span>
+						<span>2016</span>
+					</div>
+				</div>
+				<div class="content__item">
+					<h2 class="content__item-title">The Wishes</h2>
+					<div class="content__item-text">
+						<span>Not kind of hopeless person but, all i want is The Creator bless ur in/external health. Don’t stop being the cutest and lovely woman in this insane galaxy. Keep growth and be another level of you, the more better version of you. Lemme help u lifting weight all of this pressure.
+						Got your back, on your side, and in your heart.
+						loving All of your version.</span>
+						<span>Iqbal</span>
+					</div>
+				</div>
+				<div class="content__item">
+					<h2 class="content__item-title">Ur first Job and My Birthday🔥</h2>
+					<div class="content__item-text">
+						<span>Jujur di bulan ini kamu menambah euphoria kesenangankuu, karena kamu keterima di majoo !!. Setelah semua drama magang dan diangge sebelah mata sama orang-orang, akhirnya kamu buktiin ke mereka.</span>
+						<span>November</span>
+					</div>
+				</div>
+				<div class="content__item">
+					<h2 class="content__item-title">Dutch Green</h2>
+					<div class="content__item-text">
+						<span>He's talking out the world
+						Talking out the world</span>
+						<span>2017</span>
+					</div>
+				</div>
+				<div class="content__item">
+					<h2 class="content__item-title">The Song</h2>
+					<div class="content__item-text">
+						<span>*ku tak bisa menjajikan surga, atau bahagia untuk selamanya*
+
+							*Tetapi jika engkau terus percaya, pasti akan ada jalan*
+							
+							*Namun tiap kudengar namamu, makin terbayang masa depanku*
+							
+							*Semakin jelas tujuan dan yang harus ku lakukan*
+							
+							*Dan di hariku yang paling gelap*
+							
+							*Semoga aku akan mengingat bahwa ini sementara*
+							
+							*Dan akan pergi dengan cepat*</span>
+						<span>2010</span>
+					</div>
+				</div>
+				<div class="content__item">
+					<h2 class="content__item-title">Art,Food,and OJT</h2>
+					<div class="content__item-text">
+						<span>Bulan ini kita jalan-jalan Sarr. Kita ke Adna Studio, Surabaya. Terus ke Ojju, enak sii itu menurutku wkwk. Dan kamu juga nyelesain OJT loh dari sisi akademisnya, jadi sangat sangat well done dibulan ini, aman enjoy mau 2022.</span>
+						<span>November</span>
+					</div>
+				</div>
+				<div class="content__item">
+					<h2 class="content__item-title">New year, new hope</h2>
+					<div class="content__item-text">
+						<span>Setelah semua yang terjadi di 2021, kamu tambah dewasa. Karena kamu, aku bisa belajar banyak. Di bulan ini cukup seruu !!, kita ke Museum lagi di Batu sama kak pie, Galih, Jajam, dan Amru wkwk.</span>
+						<span>January</span>
+					</div>
+				</div>
+				<div class="content__item">
+					<h2 class="content__item-title">The Angelic Number</h2>
+					<div class="content__item-text">
+						<span>Based on Angelic Theory, Sarah Sahda S got 444 as her angelic number sequence. The 444 often present itself when you are going through difficult times when your guardian angel feels you need a push.
+						</span>
+						<span>4444</span>
+					</div>
+				</div>
+				<div class="content__item">
+					<h2 class="content__item-title">New year, New hope</h2>
+					<div class="content__item-text">
+						<span>Setelah semua nya yang terjadi di 2021, kita semakin dewasa semakin saling mengenal dan juga aku pribadi banyak belajar dari kamu. makasih sarah, dari 2020 sampe ngelewatin 2021 dan akhirnya sekarang 2022. Kita bulan ini juga cukupp seruu! kita ke museum lagi di batu sama kak pie, galih, jajam, dan amru wkwkk. aneh bangett tapi yaudin. Masih awal 2022, masih banyak cerita yang bisa kita buat ehe.</span>
+						<span>January</span>
+					</div>
+				</div>
+				<div class="content__item">
+					<h2 class="content__item-title">Mama Come to Malang 👩‍👧‍👧</h2>
+					<div class="content__item-text">
+						<span>Akhirnya bulan ini ibukku dateng lagi ke malang. Sebelumnya thank u sarah udah ngajak ibukku ke cak uut sampe dibayarin kamu loh🥺 jangankan aku, ibukku juga terharu.</span>
+						<span>2019</span>
+					</div>
+				</div>
+				<div class="content__item">
+					<h2 class="content__item-title">Thesis drag you down</h2>
+					<div class="content__item-text">
+						<span>Bulan ini ga maen maen stress nya, karena sarah ga cuman kerja tapi juga harus lulus di tahun ini. sebenernya banyak moment di bulan ini cuman intinya “mo matiiii”.</span>
+						<span>June</span>
+					</div>
+				</div>
+				<div class="content__item">
+					<h2 class="content__item-title">Coffee shop everyday 😎</h2>
+					<div class="content__item-text">
+						<span>Kalo dilihat dari galeri ku, bulan ini kita sering ngopi wkwk. Dari yang tiba-tiba ke Mixue, terus ke Roketto, terus ga ada apa apa ke OURA. ??//Dan makasih karena doa mu, aku bulan ini keterima di Hasmicro</span>
+						<span>February</span>
+					</div>
+				</div>
+				<div class="content__item">
+					<h2 class="content__item-title">Ramadhan is back🌙</h2>
+					<div class="content__item-text">
+						<span>Karena ini bulan ramadhan, kita akhirnya punya rencana buat sahur dan buka puasa bareng. tapi ini juga yang aku bete.. aku belum dibayar bayar sama hashmicro😟. Singkat cerita akhirnya kita bisa bukber di sambel gami bu’sum. sarah juga banyakk bukber sama temen2nyaa, lumayan asikk bulan puasa kali ini karena cukup rame dibanding tahun kemarin.</span>
+						<span>April</span>
+					</div>
+				</div>
+				<div class="content__item">
+					<h2 class="content__item-title">Red Wrath</h2>
+					<div class="content__item-text">
+						<span>Hey, dibulan ini sarah lulus! you did it!! 
+
+							i know, ga gampang sarah sampe sekarang, cuman buktinya? kamuu bisa! proudd of you. kamu tetep bisa well done di akademis mu, keep it up sarah:) aku bakal ada di sampingmu.</span>
+						<span>2013</span>
+					</div>
+				</div>
+				<div class="content__item">
+					<h2 class="content__item-title">Mama Come to Malang 👩‍👧‍👧</h2>
+					<div class="content__item-text">
+						<span>Akhirnya bulan ini ibukku dateng lagi ke malang. Sebelumnya thank u sarah udah ngajak ibukku ke cak uut sampe dibayarin kamu loh🥺 jangankan aku, ibukku juga terharu.</span>
+						<span>March</span>
+					</div>
+				</div>
+				<div class="content__item">
+					<h2 class="content__item-title">Jatim Park & Kuliner Batu 🦕</h2>
+					<div class="content__item-text">
+						<span>Ini proker pengganti dinner, makasih ya Sarah udah kasih aku kesempatan lain untuk buat kamu seneng yaituu ke Jatim park. Aku seneng bangett bisa ke Jatim park sama foto-foto wkwk hihii luvv.</span>
+						<span>May</span>
+					</div>
+				</div>
+				<nav class="content__nav">
+					<div class="content__nav-wrap">
+						<div class="content__nav-item" style="background-image:url(img/jan.jpg)"></div>
+						<div class="content__nav-item" style="background-image:url(img/feb.jpg)"></div>
+						<div class="content__nav-item" style="background-image:url(img/mar.jpg)"></div>
+						<div class="content__nav-item" style="background-image:url(img/may.jpg)"></div>
+						<div class="content__nav-item" style="background-image:url(img/jun.jpg)"></div>
+						<div class="content__nav-item" style="background-image:url(img/jul.jpg)"></div>
+						<div class="content__nav-item" style="background-image:url(img/august.jpg)"></div>
+						<div class="content__nav-item" style="background-image:url(img/sept.jpg)"></div>
+						<div class="content__nav-item" style="background-image:url(img/oct.jpg)"></div>
+						<div class="content__nav-item" style="background-image:url(img/nov.jpg)"></div>
+						<div class="content__nav-item" style="background-image:url(img/des.jpg)"></div>
+						<div class="content__nav-item" style="background-image:url(img/jan.jpg)"></div>
+						<div class="content__nav-item" style="background-image:url(img/feb.jpg)"></div>
+						<div class="content__nav-item" style="background-image:url(img/mar.jpg)"></div>
+						<div class="content__nav-item" style="background-image:url(img/apr.jpg)"></div>
+						<div class="content__nav-item" style="background-image:url(img/jun.jpg)"></div>
+						<div class="content__nav-item" style="background-image:url(img/jul.jpg)"></div>
+						<div class="content__nav-item" style="background-image:url(img/august.jpg)"></div>
+						<div class="content__nav-item" style="background-image:url(img/sept.jpg)"></div>
+					</div>
+				</nav>
+				<button class="unbutton button-back"><svg viewBox="0 0 50 9" width="100%"><path d="M0 4.5l5-3M0 4.5l5 3M50 4.5h-77"></path></svg></button>
+			</div>
+		</main>
+		<script type="module" src="js/index.js"></script>
+	</body>
+</html>
